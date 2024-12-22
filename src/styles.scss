@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+  }
+  .navbar-brand {
+    color: #007bff !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .navbar-nav .nav-link {
+    color: #007bff !important;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  h3, h4, h5 {
+    color: #007bff;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .btn-secondary {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    color: #333;
+    border-radius: 30px;
+  }
+  .book-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  .book-card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  @media (max-width: 768px) {
+    .btn-primary, .btn-secondary {
+      font-size: 14px;
+    }
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+    .navbar-nav .nav-link {
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,18 @@
+<section class="container my-4">
+  <h3 class="text-center mb-4">Search Books</h3>
+  <form class="row g-3">
+    <div class="col-md-8">
+      <!-- Add 'name' attribute -->
+      <input
+        [(ngModel)]="searchQuery"
+        type="text"
+        class="form-control"
+        placeholder="Search by title, author, or keyword"
+        name="searchQuery" 
+      />
+    </div>
+    <div class="col-md-4">
+      <button type="button" class="btn btn-primary w-100" (click)="onSearch()">Search</button>
+    </div>
+  </form>
+</section>

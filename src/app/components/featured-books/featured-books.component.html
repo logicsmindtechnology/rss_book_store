@@ -1,0 +1,14 @@
+<section class="container my-4">
+  <h4 class="text-center mb-4">Featured Books</h4>
+  <div class="row">
+    <div class="col-md-3 mb-4" *ngFor="let book of books">
+      <div class="book-card text-center">
+        <img [src]="book.image_url" class="img-fluid" alt="{{ book.title }}" />
+        <h5 class="mt-2">{{ book.title }}</h5>
+        <p>{{ book.author }}</p>
+        <p><strong>${{ book.price }}</strong></p>
+        <a [href]="book.vendor_url" target="_blank" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
