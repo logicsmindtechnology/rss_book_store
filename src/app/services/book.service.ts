@@ -8,8 +8,8 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class BookService {
   //private apiUrl = 'http://localhost:8080/books'; // Replace with your API URL
-  private apiUrl ='https://book-store-api-b3faapeagjdchxgg.centralindia-01.azurewebsites.net/books'
-
+  //private apiUrl ='https://book-store-api-b3faapeagjdchxgg.centralindia-01.azurewebsites.net/books'
+private apiUrl = 'https://rss-book-api.onrender.com/books';
   // Observable to share book data
   private booksSubject = new BehaviorSubject<any[]>([]);
   books$ = this.booksSubject.asObservable();
